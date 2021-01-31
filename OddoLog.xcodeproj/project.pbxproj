@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B18AC4F25C6D78200DB8F9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18AC4E25C6D78200DB8F9A /* AppDelegate.swift */; };
+		4B18AC5125C6D78200DB8F9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18AC5025C6D78200DB8F9A /* SceneDelegate.swift */; };
+		4B18AC5325C6D78200DB8F9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18AC5225C6D78200DB8F9A /* ViewController.swift */; };
+		4B18AC5625C6D78200DB8F9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B18AC5425C6D78200DB8F9A /* Main.storyboard */; };
+		4B18AC5925C6D78200DB8F9A /* OddoLog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B18AC5725C6D78200DB8F9A /* OddoLog.xcdatamodeld */; };
+		4B18AC5B25C6D78300DB8F9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B18AC5A25C6D78300DB8F9A /* Assets.xcassets */; };
+		4B18AC5E25C6D78300DB8F9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B18AC5C25C6D78300DB8F9A /* LaunchScreen.storyboard */; };
+		4B18AC6925C6D78300DB8F9A /* OddoLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18AC6825C6D78300DB8F9A /* OddoLogTests.swift */; };
+		4B18AC7425C6D78300DB8F9A /* OddoLogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18AC7325C6D78300DB8F9A /* OddoLogUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B18AC6525C6D78300DB8F9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B18AC4325C6D78200DB8F9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B18AC4A25C6D78200DB8F9A;
+			remoteInfo = OddoLog;
+		};
+		4B18AC7025C6D78300DB8F9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B18AC4325C6D78200DB8F9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B18AC4A25C6D78200DB8F9A;
+			remoteInfo = OddoLog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B18AC4B25C6D78200DB8F9A /* OddoLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OddoLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B18AC4E25C6D78200DB8F9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B18AC5025C6D78200DB8F9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4B18AC5225C6D78200DB8F9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4B18AC5525C6D78200DB8F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B18AC5825C6D78200DB8F9A /* OddoLog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OddoLog.xcdatamodel; sourceTree = "<group>"; };
+		4B18AC5A25C6D78300DB8F9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B18AC5D25C6D78300DB8F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B18AC5F25C6D78300DB8F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B18AC6425C6D78300DB8F9A /* OddoLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OddoLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B18AC6825C6D78300DB8F9A /* OddoLogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddoLogTests.swift; sourceTree = "<group>"; };
+		4B18AC6A25C6D78300DB8F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B18AC6F25C6D78300DB8F9A /* OddoLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OddoLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B18AC7325C6D78300DB8F9A /* OddoLogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddoLogUITests.swift; sourceTree = "<group>"; };
+		4B18AC7525C6D78300DB8F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B18AC4825C6D78200DB8F9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B18AC6125C6D78300DB8F9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B18AC6C25C6D78300DB8F9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B18AC4225C6D78200DB8F9A = {
+			isa = PBXGroup;
+			children = (
+				4B18AC4D25C6D78200DB8F9A /* OddoLog */,
+				4B18AC6725C6D78300DB8F9A /* OddoLogTests */,
+				4B18AC7225C6D78300DB8F9A /* OddoLogUITests */,
+				4B18AC4C25C6D78200DB8F9A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B18AC4C25C6D78200DB8F9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B18AC4B25C6D78200DB8F9A /* OddoLog.app */,
+				4B18AC6425C6D78300DB8F9A /* OddoLogTests.xctest */,
+				4B18AC6F25C6D78300DB8F9A /* OddoLogUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B18AC4D25C6D78200DB8F9A /* OddoLog */ = {
+			isa = PBXGroup;
+			children = (
+				4B18AC4E25C6D78200DB8F9A /* AppDelegate.swift */,
+				4B18AC5025C6D78200DB8F9A /* SceneDelegate.swift */,
+				4B18AC5225C6D78200DB8F9A /* ViewController.swift */,
+				4B18AC5425C6D78200DB8F9A /* Main.storyboard */,
+				4B18AC5A25C6D78300DB8F9A /* Assets.xcassets */,
+				4B18AC5C25C6D78300DB8F9A /* LaunchScreen.storyboard */,
+				4B18AC5F25C6D78300DB8F9A /* Info.plist */,
+				4B18AC5725C6D78200DB8F9A /* OddoLog.xcdatamodeld */,
+			);
+			path = OddoLog;
+			sourceTree = "<group>";
+		};
+		4B18AC6725C6D78300DB8F9A /* OddoLogTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B18AC6825C6D78300DB8F9A /* OddoLogTests.swift */,
+				4B18AC6A25C6D78300DB8F9A /* Info.plist */,
+			);
+			path = OddoLogTests;
+			sourceTree = "<group>";
+		};
+		4B18AC7225C6D78300DB8F9A /* OddoLogUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4B18AC7325C6D78300DB8F9A /* OddoLogUITests.swift */,
+				4B18AC7525C6D78300DB8F9A /* Info.plist */,
+			);
+			path = OddoLogUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B18AC4A25C6D78200DB8F9A /* OddoLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B18AC7825C6D78300DB8F9A /* Build configuration list for PBXNativeTarget "OddoLog" */;
+			buildPhases = (
+				4B18AC4725C6D78200DB8F9A /* Sources */,
+				4B18AC4825C6D78200DB8F9A /* Frameworks */,
+				4B18AC4925C6D78200DB8F9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OddoLog;
+			productName = OddoLog;
+			productReference = 4B18AC4B25C6D78200DB8F9A /* OddoLog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B18AC6325C6D78300DB8F9A /* OddoLogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B18AC7B25C6D78300DB8F9A /* Build configuration list for PBXNativeTarget "OddoLogTests" */;
+			buildPhases = (
+				4B18AC6025C6D78300DB8F9A /* Sources */,
+				4B18AC6125C6D78300DB8F9A /* Frameworks */,
+				4B18AC6225C6D78300DB8F9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B18AC6625C6D78300DB8F9A /* PBXTargetDependency */,
+			);
+			name = OddoLogTests;
+			productName = OddoLogTests;
+			productReference = 4B18AC6425C6D78300DB8F9A /* OddoLogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4B18AC6E25C6D78300DB8F9A /* OddoLogUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B18AC7E25C6D78300DB8F9A /* Build configuration list for PBXNativeTarget "OddoLogUITests" */;
+			buildPhases = (
+				4B18AC6B25C6D78300DB8F9A /* Sources */,
+				4B18AC6C25C6D78300DB8F9A /* Frameworks */,
+				4B18AC6D25C6D78300DB8F9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B18AC7125C6D78300DB8F9A /* PBXTargetDependency */,
+			);
+			name = OddoLogUITests;
+			productName = OddoLogUITests;
+			productReference = 4B18AC6F25C6D78300DB8F9A /* OddoLogUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B18AC4325C6D78200DB8F9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					4B18AC4A25C6D78200DB8F9A = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					4B18AC6325C6D78300DB8F9A = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 4B18AC4A25C6D78200DB8F9A;
+					};
+					4B18AC6E25C6D78300DB8F9A = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 4B18AC4A25C6D78200DB8F9A;
+					};
+				};
+			};
+			buildConfigurationList = 4B18AC4625C6D78200DB8F9A /* Build configuration list for PBXProject "OddoLog" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B18AC4225C6D78200DB8F9A;
+			productRefGroup = 4B18AC4C25C6D78200DB8F9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B18AC4A25C6D78200DB8F9A /* OddoLog */,
+				4B18AC6325C6D78300DB8F9A /* OddoLogTests */,
+				4B18AC6E25C6D78300DB8F9A /* OddoLogUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B18AC4925C6D78200DB8F9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B18AC5E25C6D78300DB8F9A /* LaunchScreen.storyboard in Resources */,
+				4B18AC5B25C6D78300DB8F9A /* Assets.xcassets in Resources */,
+				4B18AC5625C6D78200DB8F9A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B18AC6225C6D78300DB8F9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B18AC6D25C6D78300DB8F9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B18AC4725C6D78200DB8F9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B18AC5925C6D78200DB8F9A /* OddoLog.xcdatamodeld in Sources */,
+				4B18AC5325C6D78200DB8F9A /* ViewController.swift in Sources */,
+				4B18AC4F25C6D78200DB8F9A /* AppDelegate.swift in Sources */,
+				4B18AC5125C6D78200DB8F9A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B18AC6025C6D78300DB8F9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B18AC6925C6D78300DB8F9A /* OddoLogTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B18AC6B25C6D78300DB8F9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B18AC7425C6D78300DB8F9A /* OddoLogUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B18AC6625C6D78300DB8F9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B18AC4A25C6D78200DB8F9A /* OddoLog */;
+			targetProxy = 4B18AC6525C6D78300DB8F9A /* PBXContainerItemProxy */;
+		};
+		4B18AC7125C6D78300DB8F9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B18AC4A25C6D78200DB8F9A /* OddoLog */;
+			targetProxy = 4B18AC7025C6D78300DB8F9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B18AC5425C6D78200DB8F9A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B18AC5525C6D78200DB8F9A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4B18AC5C25C6D78300DB8F9A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B18AC5D25C6D78300DB8F9A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B18AC7625C6D78300DB8F9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B18AC7725C6D78300DB8F9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B18AC7925C6D78300DB8F9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y9NCLVZ4U8;
+				INFOPLIST_FILE = OddoLog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = odoo.OddoLog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B18AC7A25C6D78300DB8F9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y9NCLVZ4U8;
+				INFOPLIST_FILE = OddoLog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = odoo.OddoLog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4B18AC7C25C6D78300DB8F9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y9NCLVZ4U8;
+				INFOPLIST_FILE = OddoLogTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = odoo.OddoLogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OddoLog.app/OddoLog";
+			};
+			name = Debug;
+		};
+		4B18AC7D25C6D78300DB8F9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y9NCLVZ4U8;
+				INFOPLIST_FILE = OddoLogTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = odoo.OddoLogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OddoLog.app/OddoLog";
+			};
+			name = Release;
+		};
+		4B18AC7F25C6D78300DB8F9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y9NCLVZ4U8;
+				INFOPLIST_FILE = OddoLogUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = odoo.OddoLogUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OddoLog;
+			};
+			name = Debug;
+		};
+		4B18AC8025C6D78300DB8F9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y9NCLVZ4U8;
+				INFOPLIST_FILE = OddoLogUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = odoo.OddoLogUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OddoLog;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B18AC4625C6D78200DB8F9A /* Build configuration list for PBXProject "OddoLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B18AC7625C6D78300DB8F9A /* Debug */,
+				4B18AC7725C6D78300DB8F9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B18AC7825C6D78300DB8F9A /* Build configuration list for PBXNativeTarget "OddoLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B18AC7925C6D78300DB8F9A /* Debug */,
+				4B18AC7A25C6D78300DB8F9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B18AC7B25C6D78300DB8F9A /* Build configuration list for PBXNativeTarget "OddoLogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B18AC7C25C6D78300DB8F9A /* Debug */,
+				4B18AC7D25C6D78300DB8F9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B18AC7E25C6D78300DB8F9A /* Build configuration list for PBXNativeTarget "OddoLogUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B18AC7F25C6D78300DB8F9A /* Debug */,
+				4B18AC8025C6D78300DB8F9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4B18AC5725C6D78200DB8F9A /* OddoLog.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4B18AC5825C6D78200DB8F9A /* OddoLog.xcdatamodel */,
+			);
+			currentVersion = 4B18AC5825C6D78200DB8F9A /* OddoLog.xcdatamodel */;
+			path = OddoLog.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4B18AC4325C6D78200DB8F9A /* Project object */;
+}
