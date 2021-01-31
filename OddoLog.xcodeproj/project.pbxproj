@@ -16,6 +16,9 @@
 		4B18AC5E25C6D78300DB8F9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B18AC5C25C6D78300DB8F9A /* LaunchScreen.storyboard */; };
 		4B18AC6925C6D78300DB8F9A /* OddoLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18AC6825C6D78300DB8F9A /* OddoLogTests.swift */; };
 		4B18AC7425C6D78300DB8F9A /* OddoLogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18AC7325C6D78300DB8F9A /* OddoLogUITests.swift */; };
+		4B18AC8A25C6DA7600DB8F9A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18AC8925C6DA7600DB8F9A /* LoginViewController.swift */; };
+		4B18AC9225C6DAF400DB8F9A /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18AC9125C6DAF400DB8F9A /* LoginPresenter.swift */; };
+		4B18AC9725C6DC2B00DB8F9A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18AC9625C6DC2B00DB8F9A /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		4B18AC6F25C6D78300DB8F9A /* OddoLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OddoLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B18AC7325C6D78300DB8F9A /* OddoLogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OddoLogUITests.swift; sourceTree = "<group>"; };
 		4B18AC7525C6D78300DB8F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B18AC8925C6DA7600DB8F9A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4B18AC9125C6DAF400DB8F9A /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		4B18AC9625C6DC2B00DB8F9A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +145,7 @@
 			children = (
 				4B18AC4E25C6D78200DB8F9A /* AppDelegate.swift */,
 				4B18AC5025C6D78200DB8F9A /* SceneDelegate.swift */,
+				4B18AC9625C6DC2B00DB8F9A /* Extensions.swift */,
 			);
 			path = Resourse;
 			sourceTree = "<group>";
@@ -146,6 +153,8 @@
 		4B18AC8525C6D85700DB8F9A /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				4B18AC8925C6DA7600DB8F9A /* LoginViewController.swift */,
+				4B18AC9125C6DAF400DB8F9A /* LoginPresenter.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -301,10 +310,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B18AC9225C6DAF400DB8F9A /* LoginPresenter.swift in Sources */,
 				4B18AC5925C6D78200DB8F9A /* OddoLog.xcdatamodeld in Sources */,
 				4B18AC5325C6D78200DB8F9A /* ViewController.swift in Sources */,
 				4B18AC4F25C6D78200DB8F9A /* AppDelegate.swift in Sources */,
+				4B18AC8A25C6DA7600DB8F9A /* LoginViewController.swift in Sources */,
 				4B18AC5125C6D78200DB8F9A /* SceneDelegate.swift in Sources */,
+				4B18AC9725C6DC2B00DB8F9A /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
