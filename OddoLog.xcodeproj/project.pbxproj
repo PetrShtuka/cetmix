@@ -101,8 +101,11 @@
 		4B18AC4D25C6D78200DB8F9A /* OddoLog */ = {
 			isa = PBXGroup;
 			children = (
-				4B18AC4E25C6D78200DB8F9A /* AppDelegate.swift */,
-				4B18AC5025C6D78200DB8F9A /* SceneDelegate.swift */,
+				4B18AC8825C6D89C00DB8F9A /* Model */,
+				4B18AC8725C6D88A00DB8F9A /* Router */,
+				4B18AC8625C6D87900DB8F9A /* Main */,
+				4B18AC8525C6D85700DB8F9A /* Login */,
+				4B18AC8425C6D81100DB8F9A /* Resourse */,
 				4B18AC5225C6D78200DB8F9A /* ViewController.swift */,
 				4B18AC5425C6D78200DB8F9A /* Main.storyboard */,
 				4B18AC5A25C6D78300DB8F9A /* Assets.xcassets */,
@@ -129,6 +132,43 @@
 				4B18AC7525C6D78300DB8F9A /* Info.plist */,
 			);
 			path = OddoLogUITests;
+			sourceTree = "<group>";
+		};
+		4B18AC8425C6D81100DB8F9A /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+				4B18AC4E25C6D78200DB8F9A /* AppDelegate.swift */,
+				4B18AC5025C6D78200DB8F9A /* SceneDelegate.swift */,
+			);
+			path = Resourse;
+			sourceTree = "<group>";
+		};
+		4B18AC8525C6D85700DB8F9A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4B18AC8625C6D87900DB8F9A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4B18AC8725C6D88A00DB8F9A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		4B18AC8825C6D89C00DB8F9A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
