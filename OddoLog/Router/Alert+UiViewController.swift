@@ -8,14 +8,9 @@
 import Foundation
 import UIKit
 
-protocol Alert: UIViewController  {
-    
-    func presentAlert(withTitle title:String, message: String)
-}
-
 extension UIViewController {
     
-    func presentAlert(withTitle title:String, message: String) {
+    func presentAlert(withTitle title:String, message: String?) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
         
