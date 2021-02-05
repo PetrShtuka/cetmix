@@ -8,11 +8,8 @@
 import Foundation
 import Apollo
 
-
 class Network {
-    
     static let shared = Network()
-    
     private(set) lazy var apollo: ApolloClient = {
         let client = URLSessionClient()
         let cache = InMemoryNormalizedCache()
@@ -24,5 +21,3 @@ class Network {
         return ApolloClient(networkTransport: transport, store: store)
     }()
 }
-
-

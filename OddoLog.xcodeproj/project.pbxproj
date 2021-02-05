@@ -278,6 +278,7 @@
 				4B18AC4725C6D78200DB8F9A /* Sources */,
 				4B18AC4825C6D78200DB8F9A /* Frameworks */,
 				4B18AC4925C6D78200DB8F9A /* Resources */,
+				4B9DA1D925CC23EE00402BAC /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -366,6 +367,7 @@
 			packageReferences = (
 				4B18AC9B25C6E32E00DB8F9A /* XCRemoteSwiftPackageReference "apollo-ios" */,
 				4B57EB3D25C839D800D08023 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				4B9DA1D325CC23C000402BAC /* XCRemoteSwiftPackageReference "SwiftLint" */,
 			);
 			productRefGroup = 4B18AC4C25C6D78200DB8F9A /* Products */;
 			projectDirPath = "";
@@ -424,6 +426,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swif\n";
+		};
+		4B9DA1D925CC23EE00402BAC /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"error: SwiftLint does not exist, download it from https://github.com/realm/SwiftLint\"\n  exit 1\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -797,6 +817,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 19.0.0;
+			};
+		};
+		4B9DA1D325CC23C000402BAC /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.42.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

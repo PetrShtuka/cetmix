@@ -10,37 +10,36 @@ import Apollo
 import KeychainSwift
 
 class LoginViewPresenter: LoginPresenter {
-    
     weak var view: LoginView?
-    
     private var username: String?
     private var password: String?
     
     func setUserName(username: String?) {
         self.username = username
     }
-    
     func setPassword(password: String?) {
         self.password = password
     }
-    
     static let loginKeychainKey = "login"
-    
     func attachView(_ view: LoginView?) {
         self.view = view
     }
-    
-    
+    //     ???
+    //    func login() {
+    //        self.view?.didLogin(error: nil)
+    //    }
+    func validate(email: String) -> Bool {
+        let emailRegEx = "(@?:[a-z0-9!#$%\\&'*+/=?\\^_`{|}~-]+(?:\\.[a-z0-9!#$%\\&'*"
+        let emailTest = NSPredicate(format: "SELF MATCHES[c] %@", emailRegEx)
+        return emailTest.evaluate(with: email)
+    }
     func loginIn() {
-        
         guard let login = username else { return }
         guard let password = password else { return }
-        
         Network.shared.apollo.fetch(query: LoginQuery(login: login, password: password)) { [weak self] result in
             defer {
                 self?.view?.enableSubmitButton(true)
             }
-            
             switch result {
             case .success(let graphQLResult):
                 if let token = graphQLResult.data?.login {
@@ -51,14 +50,13 @@ class LoginViewPresenter: LoginPresenter {
                     print("Success")
                     print(token)
                 }
-                
                 if let errors = graphQLResult.errors {
                     print("Errors from server: \(errors)")
                 }
             case .failure(let error):
                 print("Error: \(error)")
+                self?.view?.didLogin(error: error)
             }
         }
     }
-    
 }

@@ -8,13 +8,13 @@
 import Foundation
 
 class UserModel {
-    
+
     var login: String?
     var password: String?
     var token: String
-    
+
     init(token: String) {
         self.token = token
     }
-    
+
 }

@@ -32,7 +32,9 @@ public final class LoginQuery: GraphQLQuery {
 
     public static var selections: [GraphQLSelection] {
       return [
-        GraphQLField("login", arguments: ["login": GraphQLVariable("login"), "password": GraphQLVariable("password")], type: .scalar(Bool.self)),
+        GraphQLField("login", arguments: ["login": GraphQLVariable("login"),
+                                          "password": GraphQLVariable("password")],
+                                         type: .scalar(Bool.self))
       ]
     }
 
