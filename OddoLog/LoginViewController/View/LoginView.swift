@@ -6,7 +6,6 @@
 //
 
 protocol LoginView: class {
-
     func showAlert(with title: String?, message: String?)
     func enableSubmitButton(_ isEnabled: Bool)
     func didLogin(error: Error?)
