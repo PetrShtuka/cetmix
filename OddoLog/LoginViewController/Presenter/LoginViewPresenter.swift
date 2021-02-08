@@ -23,27 +23,31 @@ class LoginViewPresenter: LoginPresenter {
     func attachView(_ view: LoginView?) {
         self.view = view
     }
-    //     ???
-    //    func login() {
-    //        self.view?.didLogin(error: nil)
-    //    }
-    func validate(email: String?) -> Bool {
-        let emailRegEx = "(@?:[a-z0-9!#$%\\&'*+/=?\\^_`{|}~-]+(?:\\.[a-z0-9!#$%\\&'*"
-        let emailTest = NSPredicate(format: "SELF MATCHES[c] %@", emailRegEx)
-        return emailTest.evaluate(with: email)
+    func login() {
+        self.view?.didLogin(error: nil)
     }
-
+    func validate(email: String?) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+            let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+            return emailPred.evaluate(with: email)
+    }
     func loginIn() {
-        guard let login = username else {
+        self.view?.enableSubmitButton(false)
+        guard let login = username, !login.isEmpty else {
             self.view?.showAlert(with: "Error email", message: "Please enter an email address")
             self.view?.enableSubmitButton(true)
             return
-        }
-        guard let password = password else {
+            }
+            guard validate(email: login) else {
+            self.view?.showAlert(with: "Error", message: "Please ")
+            self.view?.enableSubmitButton(true)
+            return
+            }
+            guard let password = password, !password.isEmpty else {
             self.view?.showAlert(with: "Error", message: "Please enter an password")
             self.view?.enableSubmitButton(true)
             return
-        }
+            }
         Network.shared.apollo.fetch(query: LoginQuery(login: login, password: password)) { [weak self] result in
             defer {
                 self?.view?.enableSubmitButton(true)
@@ -63,7 +67,7 @@ class LoginViewPresenter: LoginPresenter {
                 }
             case .failure(let error):
                 print("Error: \(error)")
-                self?.view?.didLogin(error: error)
+                self?.view?.showAlert(with: "Error", message: error.localizedDescription)
             }
         }
     }
