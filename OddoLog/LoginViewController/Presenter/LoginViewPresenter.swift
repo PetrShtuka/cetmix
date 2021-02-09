@@ -28,7 +28,7 @@ class LoginViewPresenter: LoginPresenter {
     }
     func validate(email: String?) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-            let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+            let emailPred = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
             return emailPred.evaluate(with: email)
     }
     func loginIn() {
@@ -39,7 +39,7 @@ class LoginViewPresenter: LoginPresenter {
             return
             }
             guard validate(email: login) else {
-            self.view?.showAlert(with: "Error", message: "Please ")
+            self.view?.showAlert(with: "Error symbol", message: "Check symbol")
             self.view?.enableSubmitButton(true)
             return
             }
@@ -60,7 +60,7 @@ class LoginViewPresenter: LoginPresenter {
                     // self?.dismiss(animated: true)
                     // Segue loadHomeScreen()
                     print("Success")
-                    print(token)
+                    print(graphQLResult.source.hashValue)
                 }
                 if let errors = graphQLResult.errors {
                     print("Errors from server: \(errors)")

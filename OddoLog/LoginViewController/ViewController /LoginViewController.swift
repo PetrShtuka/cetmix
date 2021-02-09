@@ -12,6 +12,7 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var loginViewBottomConstrain: NSLayoutConstraint!
     var presenter: LoginPresenter = LoginViewPresenter()
+    // var router: Router
     @IBOutlet var emailTextFiled: UITextField!
     @IBOutlet weak var passwordTextFiled: UITextField!
     @IBOutlet weak var logInButton: UIButton!
@@ -58,6 +59,13 @@ class LoginViewController: UIViewController {
             view.layoutIfNeeded()
         }
     }
+    
+//    func segue() {
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = storyboard.instantiateViewController(withIdentifier: "OrderTable") as? OrderTableView
+//
+//
+//    }
 }
 
 extension LoginViewController: LoginView {
@@ -70,9 +78,7 @@ extension LoginViewController: LoginView {
         }
     }
     func showAlert(with title: String?, message: String?) {
-        DispatchQueue.main.async {
         self.presentAlert(withTitle: title, message: message)
-        }
     }
     func enableSubmitButton(_ isEnabled: Bool) {
         self.logInButton.isEnabled = isEnabled

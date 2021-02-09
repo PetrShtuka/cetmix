@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,39 +13,78 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="OddoLog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sqd-da-rKY">
-                                <rect key="frame" x="30.5" y="529" width="353" height="183"/>
+                                <rect key="frame" x="30.5" y="763" width="963" height="183"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jpp-pC-WBT">
-                                        <rect key="frame" x="0.0" y="64" width="353" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="BYZ-38-t0r" id="2m8-iT-xZP"/>
-                                        </connections>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RMA-OZ-kpO">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egn-fD-wAx">
+                                        <rect key="frame" x="0.0" y="15" width="963" height="46"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RMA-OZ-kpO">
+                                                <rect key="frame" x="10" y="6" width="943" height="34"/>
+                                                <color key="backgroundColor" red="0.95666378740000002" green="0.95746928450000002" blue="0.96054476499999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="64s-w2-DSA"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.95666378740000002" green="0.95746928450000002" blue="0.96054476499999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="RMA-OZ-kpO" secondAttribute="trailing" constant="10" id="0I3-uK-sCE"/>
+                                            <constraint firstAttribute="bottom" secondItem="RMA-OZ-kpO" secondAttribute="bottom" constant="6" id="3Kx-0A-2SI"/>
+                                            <constraint firstItem="RMA-OZ-kpO" firstAttribute="top" secondItem="egn-fD-wAx" secondAttribute="top" constant="6" id="9Za-jF-ccS"/>
+                                            <constraint firstItem="RMA-OZ-kpO" firstAttribute="leading" secondItem="egn-fD-wAx" secondAttribute="leading" constant="10" id="GkP-5h-0qZ"/>
+                                        </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="30"/>
+                                                <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <outlet property="delegate" destination="BYZ-38-t0r" id="64s-w2-DSA"/>
-                                        </connections>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVY-2t-Rfg">
-                                        <rect key="frame" x="157.5" y="153" width="38" height="30"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Ig-FO-8ia">
+                                        <rect key="frame" x="0.0" y="64" width="773" height="45"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jpp-pC-WBT">
+                                                <rect key="frame" x="4" y="5" width="765" height="35"/>
+                                                <color key="backgroundColor" red="0.95666378740000002" green="0.95746928450000002" blue="0.96054476499999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="textColor"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="BYZ-38-t0r" id="2m8-iT-xZP"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.95666378740000002" green="0.95746928450000002" blue="0.96054476499999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="IEG-RX-Dlb"/>
+                                            <constraint firstAttribute="trailing" secondItem="Jpp-pC-WBT" secondAttribute="trailing" constant="4" id="0F6-8y-uKi"/>
+                                            <constraint firstItem="Jpp-pC-WBT" firstAttribute="centerY" secondItem="4Ig-FO-8ia" secondAttribute="centerY" id="6ws-W7-waU"/>
+                                            <constraint firstItem="Jpp-pC-WBT" firstAttribute="leading" secondItem="4Ig-FO-8ia" secondAttribute="leading" constant="4" id="M2D-uD-yKL"/>
+                                            <constraint firstItem="Jpp-pC-WBT" firstAttribute="top" secondItem="4Ig-FO-8ia" secondAttribute="top" constant="3" id="yfy-fh-d4F"/>
                                         </constraints>
-                                        <state key="normal" title="LogIn"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVY-2t-Rfg">
+                                        <rect key="frame" x="0.0" y="112" width="963" height="40"/>
+                                        <color key="backgroundColor" red="0.01285334118" green="0.47306483980000003" blue="0.98685568570000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="IEG-RX-Dlb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="tintColor" red="0.9999160171" green="1" blue="0.99987190960000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Log In"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="loginIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z1P-uS-Hxe"/>
                                         </connections>
@@ -53,16 +92,19 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="KVY-2t-Rfg" firstAttribute="top" secondItem="Jpp-pC-WBT" secondAttribute="bottom" constant="55" id="1YK-K3-764"/>
-                                    <constraint firstItem="Jpp-pC-WBT" firstAttribute="top" secondItem="RMA-OZ-kpO" secondAttribute="bottom" constant="30" id="3nS-hV-Poj"/>
-                                    <constraint firstItem="RMA-OZ-kpO" firstAttribute="top" secondItem="Sqd-da-rKY" secondAttribute="top" id="4lA-fB-cPs"/>
-                                    <constraint firstItem="RMA-OZ-kpO" firstAttribute="leading" secondItem="Sqd-da-rKY" secondAttribute="leading" id="53R-jN-joy"/>
-                                    <constraint firstItem="KVY-2t-Rfg" firstAttribute="top" secondItem="Jpp-pC-WBT" secondAttribute="bottom" constant="55" id="Fid-xl-HfM"/>
-                                    <constraint firstAttribute="trailing" secondItem="Jpp-pC-WBT" secondAttribute="trailing" id="Mq4-gN-xrX"/>
+                                    <constraint firstItem="4Ig-FO-8ia" firstAttribute="leading" secondItem="KVY-2t-Rfg" secondAttribute="leading" id="NRb-J3-GLd"/>
+                                    <constraint firstItem="4Ig-FO-8ia" firstAttribute="trailing" secondItem="egn-fD-wAx" secondAttribute="trailing" id="OQQ-X1-AuU"/>
+                                    <constraint firstItem="4Ig-FO-8ia" firstAttribute="top" secondItem="egn-fD-wAx" secondAttribute="bottom" constant="3" id="RG2-Wa-GRy"/>
+                                    <constraint firstItem="egn-fD-wAx" firstAttribute="top" secondItem="Sqd-da-rKY" secondAttribute="top" constant="15" id="RpS-zO-BNO"/>
                                     <constraint firstAttribute="height" constant="183" id="S4X-tr-2d9"/>
-                                    <constraint firstItem="Jpp-pC-WBT" firstAttribute="leading" secondItem="Sqd-da-rKY" secondAttribute="leading" id="flQ-NO-CJg"/>
-                                    <constraint firstItem="KVY-2t-Rfg" firstAttribute="centerX" secondItem="Jpp-pC-WBT" secondAttribute="centerX" id="oDI-Q9-A7H"/>
-                                    <constraint firstAttribute="trailing" secondItem="RMA-OZ-kpO" secondAttribute="trailing" id="v5s-WM-Ak3"/>
+                                    <constraint firstAttribute="trailing" secondItem="4Ig-FO-8ia" secondAttribute="trailing" id="TaJ-O6-wQH"/>
+                                    <constraint firstItem="4Ig-FO-8ia" firstAttribute="top" secondItem="Sqd-da-rKY" secondAttribute="top" constant="64" id="dAf-uJ-G4E"/>
+                                    <constraint firstAttribute="bottom" secondItem="KVY-2t-Rfg" secondAttribute="bottom" constant="31" id="dCQ-Tj-0VN"/>
+                                    <constraint firstItem="KVY-2t-Rfg" firstAttribute="top" secondItem="4Ig-FO-8ia" secondAttribute="bottom" constant="8" symbolic="YES" id="gAS-OH-UjF"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KVY-2t-Rfg" secondAttribute="trailing" id="odf-QD-hNE"/>
+                                    <constraint firstItem="4Ig-FO-8ia" firstAttribute="trailing" secondItem="KVY-2t-Rfg" secondAttribute="trailing" id="vFl-wu-7qz"/>
+                                    <constraint firstItem="KVY-2t-Rfg" firstAttribute="leading" secondItem="Sqd-da-rKY" secondAttribute="leading" id="yKJ-RK-3o4"/>
+                                    <constraint firstItem="4Ig-FO-8ia" firstAttribute="leading" secondItem="egn-fD-wAx" secondAttribute="leading" id="yyw-nY-sZR"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -71,7 +113,7 @@
                         <constraints>
                             <constraint firstItem="Sqd-da-rKY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30.5" id="8cf-84-y7w"/>
                             <constraint firstItem="Sqd-da-rKY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jf5-f8-fLc"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Sqd-da-rKY" secondAttribute="bottom" constant="150" id="vyw-OQ-uzR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Sqd-da-rKY" secondAttribute="bottom" constant="400" id="vyw-OQ-uzR"/>
                         </constraints>
                     </view>
                     <connections>
@@ -83,7 +125,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="141" y="134"/>
+            <point key="canvasLocation" x="140.28776978417267" y="133.66834170854273"/>
         </scene>
     </scenes>
     <resources>

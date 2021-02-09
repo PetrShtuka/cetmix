@@ -28,12 +28,12 @@
 		4B18ACD125C6F38300DB8F9A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18ACD025C6F38300DB8F9A /* API.swift */; };
 		4B18ACD625C7078F00DB8F9A /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18ACD525C7078F00DB8F9A /* Network.swift */; };
 		4B18ACDB25C707CA00DB8F9A /* NetworkInterceptorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B18ACDA25C707CA00DB8F9A /* NetworkInterceptorProvider.swift */; };
+		4B1F938625D1903D00AAA829 /* OrderViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B1F938525D1903D00AAA829 /* OrderViewController.storyboard */; };
 		4B32FB3C25CA64FB00E7A900 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B32FB3B25CA64FB00E7A900 /* LoginPresenter.swift */; };
 		4B32FB4125CA65DD00E7A900 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B32FB4025CA65DD00E7A900 /* LoginView.swift */; };
 		4B32FB4925CA66BB00E7A900 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B32FB4825CA66BB00E7A900 /* UserModel.swift */; };
 		4B57EB3625C823C200D08023 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B57EB3525C823C200D08023 /* Router.swift */; };
 		4B57EB3F25C839D800D08023 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4B57EB3E25C839D800D08023 /* KeychainSwift */; };
-		4B57EB4625C84AC800D08023 /* LginInViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B57EB4525C84AC800D08023 /* LginInViewRouter.swift */; };
 		4B57EB4B25C8523200D08023 /* OrderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B57EB4A25C8523200D08023 /* OrderTableView.swift */; };
 		4B57EB5025C8660500D08023 /* Alert+UiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B57EB4F25C8660500D08023 /* Alert+UiViewController.swift */; };
 /* End PBXBuildFile section */
@@ -79,11 +79,11 @@
 		4B18ACD025C6F38300DB8F9A /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = OddoLog/API.swift; sourceTree = SOURCE_ROOT; };
 		4B18ACD525C7078F00DB8F9A /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		4B18ACDA25C707CA00DB8F9A /* NetworkInterceptorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterceptorProvider.swift; sourceTree = "<group>"; };
+		4B1F938525D1903D00AAA829 /* OrderViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderViewController.storyboard; sourceTree = "<group>"; };
 		4B32FB3B25CA64FB00E7A900 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		4B32FB4025CA65DD00E7A900 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4B32FB4825CA66BB00E7A900 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		4B57EB3525C823C200D08023 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		4B57EB4525C84AC800D08023 /* LginInViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LginInViewRouter.swift; sourceTree = "<group>"; };
 		4B57EB4A25C8523200D08023 /* OrderTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableView.swift; sourceTree = "<group>"; };
 		4B57EB4F25C8660500D08023 /* Alert+UiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alert+UiViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,8 +146,8 @@
 				4B18AC8825C6D89C00DB8F9A /* Model */,
 				4B18AC8725C6D88A00DB8F9A /* Router */,
 				4B18AC8625C6D87900DB8F9A /* Main */,
+				4B1F938325D18FF400AAA829 /* TableViewController */,
 				4B32FB2D25CA61D200E7A900 /* LoginViewController */,
-				4B18AC8525C6D85700DB8F9A /* Login */,
 				4B18AC8425C6D81100DB8F9A /* Resourse */,
 				4B18AC5225C6D78200DB8F9A /* ViewController.swift */,
 				4B18AC5A25C6D78300DB8F9A /* Assets.xcassets */,
@@ -187,14 +187,6 @@
 			path = Resourse;
 			sourceTree = "<group>";
 		};
-		4B18AC8525C6D85700DB8F9A /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				4B57EB4525C84AC800D08023 /* LginInViewRouter.swift */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
 		4B18AC8625C6D87900DB8F9A /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +211,22 @@
 				4B18ACDA25C707CA00DB8F9A /* NetworkInterceptorProvider.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4B1F938325D18FF400AAA829 /* TableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4B1F938425D1901300AAA829 /* ViewController */,
+			);
+			path = TableViewController;
+			sourceTree = "<group>";
+		};
+		4B1F938425D1901300AAA829 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4B1F938525D1903D00AAA829 /* OrderViewController.storyboard */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		4B32FB2D25CA61D200E7A900 /* LoginViewController */ = {
@@ -388,6 +396,7 @@
 				4B18ACB325C6E56400DB8F9A /* LoginIn.graphql in Resources */,
 				4B18AC5E25C6D78300DB8F9A /* LaunchScreen.storyboard in Resources */,
 				4B18AC5B25C6D78300DB8F9A /* Assets.xcassets in Resources */,
+				4B1F938625D1903D00AAA829 /* OrderViewController.storyboard in Resources */,
 				4B18AC5625C6D78200DB8F9A /* LoginViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,7 +462,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B32FB3C25CA64FB00E7A900 /* LoginPresenter.swift in Sources */,
-				4B57EB4625C84AC800D08023 /* LginInViewRouter.swift in Sources */,
 				4B18AC9225C6DAF400DB8F9A /* LoginViewPresenter.swift in Sources */,
 				4B18AC5925C6D78200DB8F9A /* OddoLog.xcdatamodeld in Sources */,
 				4B18ACDB25C707CA00DB8F9A /* NetworkInterceptorProvider.swift in Sources */,
